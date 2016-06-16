@@ -1,0 +1,47 @@
+Vector: x, y
+- plus
+- minus
+- .length
+
+Grid: space, width, height
+- isInside
+- .get
+- .set
+- .forEach
+
+World: grid, legend
+- toString
+- turn
+- letAct
+- checkDestination
+
+View: world, vector
+- look
+- findAll
+- find
+
+LifelikeWorld: grid, legend // inherited from World
+- toString
+- turn
+- letAct //overridden 
+- checkDestination
+
+actionTypes
+- .grow
+- .move
+- .eat
+- .reproduce
+
+BouncingCritter: direction 
+- act
+
+Wall
+
+WallFollower: dir
+- act
+
+Plant: energy
+- .act
+
+PlantEater: energy
+- .act
